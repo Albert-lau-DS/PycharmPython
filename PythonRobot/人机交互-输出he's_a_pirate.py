@@ -1,0 +1,1 @@
+print("he's a pirate\n"'She said,"Hurry up."')
