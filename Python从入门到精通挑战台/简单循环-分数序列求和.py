@@ -29,5 +29,5 @@ a, b = 2, 1
 for i in range(1, n + 1):
     sum_of_n = sum_of_n + a / b
     # 先把数值加上，然后再进行数值的变换，这样可以避免更换后的数值跳过第二行
-    b, a = a, a + b  # 30/31行精髓！
+    b, a = a, a + b  # 30/32行精髓！
 print(round(sum_of_n, 3))
