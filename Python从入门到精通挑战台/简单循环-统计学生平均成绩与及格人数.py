@@ -19,6 +19,6 @@ score = list(map(int, input().split()))
 average = sum(score) / len(score)
 # 用总和除以数量得到平均分
 count = len(list(x for x in score if x >= 60))
-# 通过列表推导式得到大于60分的列表然后用len()函数得到数量
+# 通过列表条件表达式得到大于60分的列表然后用len()函数得到数量
 print("average = {}".format(average))
 print("count = {}".format(count))
