@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$USER_HOME$/LeeCode/leetcode/editor/cn/[1480]一维数组的动态和.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/LeeCode-Answer/leetcode/editor/cn/doc/content/[1480]一维数组的动态和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1480" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/LeeCode-Answer/leetcode/editor/cn/[1480]一维数组的动态和.py" />
+              <option name="titleSlug" value="running-sum-of-1d-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/LeeCode-Answer/leetcode/editor/cn/[1480]一维数组的动态和.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/LeeCode-Answer/leetcode/editor/cn/doc/content/[1480]一维数组的动态和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1480" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/LeeCode-Answer/leetcode/editor/cn/[1480]一维数组的动态和.py" />
+              <option name="titleSlug" value="running-sum-of-1d-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/LeeCode-Answer/leetcode/editor/cn/[1]两数之和.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/LeeCode-Answer/leetcode/editor/cn/doc/content/[1]两数之和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/LeeCode-Answer/leetcode/editor/cn/[1]两数之和.py" />
+              <option name="titleSlug" value="two-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/LeeCode-Answer/leetcode/editor/cn/[9]回文数.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/LeeCode-Answer/leetcode/editor/cn/doc/content/[9]回文数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn9" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/LeeCode-Answer/leetcode/editor/cn/[9]回文数.py" />
+              <option name="titleSlug" value="palindrome-number" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
