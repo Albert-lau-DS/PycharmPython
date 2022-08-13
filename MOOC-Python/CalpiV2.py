@@ -12,4 +12,4 @@ for i in range(1, DARTS + 1):
         hits += 1
 pi = 4 * (hits / DARTS)
 print("圆周率值是：{}".format(pi))
-print("运行时间是：{:.5}S".format(perf_counter() - start))
+print("运行时间是：{:.5}s".format(perf_counter() - start))
