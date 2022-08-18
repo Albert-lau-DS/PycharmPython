@@ -5,12 +5,13 @@
 
 # 常规版
 n = 1000
-total = 0
+s = ''
 for i in range(100, n):
     j = str(i)
     if eval(j[0]) ** 3 + eval(j[1]) ** 3 + eval(j[2]) ** 3 == i:
-        total += i
-print(total)
+        s += '{},'.format(i)
+
+print(s[:-1])
 
 
 # 函数版
@@ -31,3 +32,15 @@ def flowers(n):
 
 list_flowers = flowers(3)
 print(sum(list_flowers))
+
+# 【参考代码】
+
+s = ""
+for i in range(100, 1000):
+    t = str(i)
+    if pow(eval(t[0]), 3) + pow(eval(t[1]), 3) \
+            + pow(eval(t[2]), 3) == i:
+        s += "{},".format(i)
+print(s[:-1])
+# 这里采用了s[:-1]方式不输出最后一个逗号。
+# 也可以把所有结果放到一个列表中，采用字符串的.join()方法输出结果。
