@@ -3,16 +3,16 @@
 import turtle, time
 
 
-def drawGap():  # 绘制数码管间隔
+def drawGap():  # 绘制数码管间隔,让数码管之间有一些间隔,增加美感。
     turtle.penup()
     turtle.fd(5)
 
 
 def drawLine(draw):  # 绘制单段数码管
-    drawGap()
+    drawGap()  # 开头的间隔
     turtle.pendown() if draw else turtle.penup()
     turtle.fd(40)
-    drawGap()
+    drawGap()  # 结尾的间隔
     turtle.right(90)
 
 
