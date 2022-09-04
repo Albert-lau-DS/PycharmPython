@@ -11,7 +11,7 @@ def koch(size, n):
     else:
         for angle in [0, 60, -120, 60]:
             turtle.left(angle)
-            koch(size/3, n-1)
+            koch(size / 3, n - 1)
             # 也就是不断地去将该曲线分为三分之一来画，直到最后的是一条直线
 
 
@@ -33,11 +33,30 @@ def main():
     turtle.pendown()
     turtle.pensize(2)
     level = 3  # 3阶科赫雪花，阶数
-    for i in range(1, level+1):
+    for i in range(1, level + 1):
         koch(400, level)
-        turtle.right(360/level)
+        turtle.right(360 / level)
     turtle.hideturtle()
     turtle.done()  # turtle画完图之后停留在纸面不退出
-
-
+# 直接驱动main函数
 main()
+
+
+def main():
+    turtle.setup(600, 600)
+    turtle.penup()
+    turtle.goto(-200, 100)
+    turtle.pendown()
+    turtle.pensize(2)
+    # level = 3  # 3阶科赫雪花，阶数
+    for i in range(1, level + 1):
+        koch(400, level)
+        turtle.right(360 / level)
+    turtle.hideturtle()
+    turtle.done()  # turtle画完图之后停留在纸面不退出
+# 使用try函数，输入阶数来驱动main函数
+try:
+    level = eval(input("请输入科赫曲线的阶: "))
+    main(level)
+except:
+    print("输入错误")
