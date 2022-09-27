@@ -12,9 +12,30 @@ while abs(result) >= threshold:
     i += 1
     result = pow(-1, i) / (2 * i + 1)
 print("{}".format(round(count*4, 6)))
+# print("{:.6f}".format(pi4*4))  不要忘记这种格式"{:.6f}.format()"
+
 # print("{}".format(round(count, 6)*4)) 不能取小数点六位后再进行乘于6的运算
 
-
+## 答案解析
+threshold = eval(input())
+pi4 = k = 0
+f = 1
+while abs(1 / (2 * k + 1)) >= threshold:
+    pi4 = pi4 + f * 1 / (2 * k + 1)
+    k = k + 1
+    f = -f
+print("{:.6f}".format(pi4*4))
+'''
+threshold=eval(input())
+item=1
+pi_4=1
+k=0
+while abs(item)>=threshold:
+    k=k+1
+    item=(-1)**k/(2*k+1)
+    pi_4=pi_4+item    
+print("{:.6f}".format(pi_4*4))
+'''
 
 
 
