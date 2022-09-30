@@ -6,11 +6,16 @@
 # 输出格式：该方程在[1.5,2.4]区间的根
 def dichotomy(left, right):
     n = 1e-6
+    count = 1
     while True:
         mid = (left+right)/2
-        if fun(mid) < n:
+        count += 1
+        if abs(fun(mid)) < n:
             return mid
-        elif 
+        elif fun(mid) > 0:
+            left = mid
+        else:
+            right = mid
 
 
 def fun(x):
@@ -18,6 +23,25 @@ def fun(x):
     return y
 
 
+if __name__ == '__main__':
+    left, right = 1.5, 2.4
+    print("{:.6f}".format(dichotomy(left, right)))
+
+
+## 答案解析(与上一题几乎是一样的)
+def f(x):
+    # 这个函数用来计算这个多项式
+    return x ** 5 - 15 * x ** 4 + 85 * x ** 3 - 225 * x ** 2 + 274 * x - 121
+
+
+x1, x2 = 1.5, 2.4
+while abs(f((x1 + x2) / 2)) > 1e-6:
+    # 二分法，如果大于0调整下界，反之调整上界
+    if f((x1 + x2) / 2) > 0:
+        x1 = (x1 + x2) / 2
+    else:
+        x2 = (x1 + x2) / 2
+print("{:.6f}".format((x1 + x2) / 2))
 
 # 采用牛顿法来求解
 # import math
