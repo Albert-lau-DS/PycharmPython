@@ -15,42 +15,6 @@
 # 用户输入为应发工资薪金所得扣除五险一金后的金额，输出应缴税款和实发工资，
 # 结果保留小数点后两位。当输入数字小于0时，输出“error”。
 
-# 常规版
-# wx = 0
-# tax = float()
-# pay = eval(input()) - wx
-# personal_income = [0, 3e3, 12e3, 25e3, 35e3, 55e3, 80e3]
-# exemption = 5000
-# tax_rate = [3e-2, 10e-2, 20e-2, 25e-2, 30e-2, 35e-2, 45e-2]
-# Quick_de = [0, 210, 1410, 2660, 4410, 7160, 15160]
-# tax_full = [(personal_income[1]-personal_income[0]) * tax_rate[0],
-#             (personal_income[2]-personal_income[1]) * tax_rate[1],
-#             (personal_income[3]-personal_income[2]) * tax_rate[2],
-#             (personal_income[4]-personal_income[3]) * tax_rate[3],
-#             (personal_income[5]-personal_income[4]) * tax_rate[4],
-#             (personal_income[6]-personal_income[5]) * tax_rate[5]]
-# if pay < 0:
-#     print('error')
-# elif 0 <= pay <= exemption + personal_income[0]:
-#     tax = 0
-# elif exemption + personal_income[0] < pay <= exemption + personal_income[1]:
-#     tax = (pay - personal_income[0]) * tax_rate[0] + Quick_de[0]
-# elif exemption + personal_income[1] < pay <= exemption + personal_income[2]:
-#     tax = (pay - personal_income[1]) * tax_rate[1] + Quick_de[1] + tax_full[0]
-# elif exemption + personal_income[2] < pay <= exemption + personal_income[3]:
-#     tax = (pay - personal_income[2]) * tax_rate[2] + Quick_de[2] + tax_full[1]
-# elif exemption + personal_income[3] < pay <= exemption + personal_income[4]:
-#     tax = (pay - personal_income[3]) * tax_rate[3] + Quick_de[3] + tax_full[2]
-# elif exemption + personal_income[4] < pay <= exemption + personal_income[5]:
-#     tax = (pay - personal_income[4]) * tax_rate[4] + Quick_de[4] + tax_full[3]
-# elif exemption + personal_income[5] < pay <= exemption + personal_income[6]:
-#     tax = (pay - personal_income[5]) * tax_rate[5] + Quick_de[5] + tax_full[4]
-# else:
-#     tax = (pay - personal_income[6]) * tax_rate[6] + Quick_de[6] + tax_full[5]
-#
-# earn = pay - tax
-# print("应缴税款{:.2f}元，实发工资{:.2f}元。".format(tax, earn))
-
 # 常规修正版
 Five_one = 0
 exemption = 5000
@@ -136,3 +100,39 @@ else:
         fee, num = 45, 15160
     tax = abs(salary * fee / 100 - num)
     print("应缴税款{:.2f}元，实发工资{:.2f}元。".format(tax, salary + 5000 - tax))
+
+# 常规版
+# wx = 0
+# tax = float()
+# pay = eval(input()) - wx
+# personal_income = [0, 3e3, 12e3, 25e3, 35e3, 55e3, 80e3]
+# exemption = 5000
+# tax_rate = [3e-2, 10e-2, 20e-2, 25e-2, 30e-2, 35e-2, 45e-2]
+# Quick_de = [0, 210, 1410, 2660, 4410, 7160, 15160]
+# tax_full = [(personal_income[1]-personal_income[0]) * tax_rate[0],
+#             (personal_income[2]-personal_income[1]) * tax_rate[1],
+#             (personal_income[3]-personal_income[2]) * tax_rate[2],
+#             (personal_income[4]-personal_income[3]) * tax_rate[3],
+#             (personal_income[5]-personal_income[4]) * tax_rate[4],
+#             (personal_income[6]-personal_income[5]) * tax_rate[5]]
+# if pay < 0:
+#     print('error')
+# elif 0 <= pay <= exemption + personal_income[0]:
+#     tax = 0
+# elif exemption + personal_income[0] < pay <= exemption + personal_income[1]:
+#     tax = (pay - personal_income[0]) * tax_rate[0] + Quick_de[0]
+# elif exemption + personal_income[1] < pay <= exemption + personal_income[2]:
+#     tax = (pay - personal_income[1]) * tax_rate[1] + Quick_de[1] + tax_full[0]
+# elif exemption + personal_income[2] < pay <= exemption + personal_income[3]:
+#     tax = (pay - personal_income[2]) * tax_rate[2] + Quick_de[2] + tax_full[1]
+# elif exemption + personal_income[3] < pay <= exemption + personal_income[4]:
+#     tax = (pay - personal_income[3]) * tax_rate[3] + Quick_de[3] + tax_full[2]
+# elif exemption + personal_income[4] < pay <= exemption + personal_income[5]:
+#     tax = (pay - personal_income[4]) * tax_rate[4] + Quick_de[4] + tax_full[3]
+# elif exemption + personal_income[5] < pay <= exemption + personal_income[6]:
+#     tax = (pay - personal_income[5]) * tax_rate[5] + Quick_de[5] + tax_full[4]
+# else:
+#     tax = (pay - personal_income[6]) * tax_rate[6] + Quick_de[6] + tax_full[5]
+#
+# earn = pay - tax
+# print("应缴税款{:.2f}元，实发工资{:.2f}元。".format(tax, earn))
