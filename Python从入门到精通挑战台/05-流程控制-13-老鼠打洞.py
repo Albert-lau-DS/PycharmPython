@@ -13,8 +13,8 @@
 # 第一行输出1个整数，表示相遇时所需的天数
 # 第二行输出2个浮点数，分别为小鼠和大鼠打洞的距离，单位为尺，保留小数点后1位数字。
 
-# num = 10
-# bigmouse = 1
-# smamouse = 1
-# count = 0.0
+num = 10
+bigmouse = 1
+smamouse = 1
+count = 0.0
 # while num > 0:

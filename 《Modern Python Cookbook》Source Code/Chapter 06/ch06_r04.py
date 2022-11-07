@@ -1,4 +1,4 @@
-"""Python Cookbook
+"""Python网络爬虫与信息提取 Cookbook
 
 Chapter 6, recipe 3 and 4
 """
@@ -16,7 +16,7 @@ class Hand:
     Hand(1, [Card(rank=1, suit='♡'), Card(rank=10, suit='♣')])
     >>> h.total = 11 #doctest: +IGNORE_EXCEPTION_DETAIL
     Traceback (most recent call last):
-      File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/doctest.py", line 1318, in __run
+      File "/Library/Frameworks/Python网络爬虫与信息提取.framework/Versions/3.4/lib/python3.4/doctest.py", line 1318, in __run
         compileflags, 1), test.globs)
       File "<doctest __main__.Hand[4]>", line 1, in <module>
         h.total = 11 #doctest: +IGNORE_EXCEPTION_DETAIL

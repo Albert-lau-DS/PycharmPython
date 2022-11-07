@@ -2,7 +2,7 @@
 {
     "swagger": "2.0",
     "info": {
-      "title": "Python Cookbook\\nChapter 12, recipe 3.",
+      "title": "Python网络爬虫与信息提取 Cookbook\\nChapter 12, recipe 3.",
       "version": "1.0"
     },
     "schemes": "http",
@@ -54,7 +54,7 @@ dealer = Flask('dealer')
 specification = {
     'swagger': '2.0',
     'info': {
-        'title': '''Python Cookbook\nChapter 12, recipe 3.''',
+        'title': '''Python网络爬虫与信息提取 Cookbook\nChapter 12, recipe 3.''',
         'version': '1.0'
     },
     'schemes': ['http'],

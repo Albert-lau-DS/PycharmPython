@@ -1,4 +1,4 @@
-"""Python Cookbook
+"""Python网络爬虫与信息提取 Cookbook
 
 Chapter 2, recipe 9
 """
@@ -21,7 +21,7 @@ def version2(source_file_path, target_file_path):
 
 if __name__ == "__main__":
     source_path = Path(os.path.expanduser(
-       '~/Documents/Writing/Python Cookbook/source'))
+       '~/Documents/Writing/Python网络爬虫与信息提取 Cookbook/source'))
     target_path = Path(os.path.expanduser(
        '~/Dropbox/B05442/demo/'))
     for source_file_path in source_path.glob('*/*.rst'):

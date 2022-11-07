@@ -1,4 +1,4 @@
-"""Python Cookbook
+"""Python网络爬虫与信息提取 Cookbook
 
 Chapter 7, recipe 7.
 """
@@ -39,7 +39,7 @@ Naive
 ...    if 'Lake' in data[index]['writer']:
 ...       del data[index]
 Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/doctest.py", line 1320, in __run
+  File "/Library/Frameworks/Python网络爬虫与信息提取.framework/Versions/3.5/lib/python3.5/doctest.py", line 1320, in __run
     compileflags, 1), test.globs)
   File "<doctest __main__.__test__.chapter[5]>", line 2, in <module>
     if 'Lake' in data[index]['writer']:

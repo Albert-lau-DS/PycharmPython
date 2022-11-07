@@ -1,4 +1,4 @@
-"""Python Cookbook
+"""Python网络爬虫与信息提取 Cookbook
 
 Chapter 10, recipe 6.
 """
