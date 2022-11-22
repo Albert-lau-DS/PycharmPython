@@ -1,4 +1,4 @@
-"""Python Cookbook
+"""Python网络爬虫与信息提取 Cookbook
 
 Chapter 5, recipe 4
 """
@@ -13,11 +13,11 @@ def point_type(string):
     (36.12, -86.67)
     >>> point_type('36.12, 76.abc') #doctest: +IGNORE_EXCEPTION_DETAIL
     Traceback (most recent call last):
-      File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/doctest.py", line 1318, in __run
+      File "/Library/Frameworks/Python网络爬虫与信息提取.framework/Versions/3.4/lib/python3.4/doctest.py", line 1318, in __run
         compileflags, 1), test.globs)
       File "<doctest __main__.point_type[1]>", line 1, in <module>
         point_type('36.12, 76.abc') #doctest: +IGNORE_EXCEPTION_DETAIL
-      File "/Users/slott/Documents/Writing/Python Cookbook/code/ch05_r04.py", line 23, in point_type
+      File "/Users/slott/Documents/Writing/Python网络爬虫与信息提取 Cookbook/code/ch05_r04.py", line 23, in point_type
         raise argparse.ArgumentTypeError from ex
     argparse.ArgumentTypeError
     """

@@ -39,7 +39,7 @@ while True:
     if home < 1 or home > 10:
         print("家境属性点数设置有误!")
         continue
-    if face + strong + iq + home > 20:  # 如果当前的条件都没有被触发, 则认为玩家输入的数据是合法的.
+    if face + strong + iq + home > 40:  # 如果当前的条件都没有被触发, 则认为玩家输入的数据是合法的.
         print("属性点数设置错误！属性点数之和超出阈值(20)")
         continue
 

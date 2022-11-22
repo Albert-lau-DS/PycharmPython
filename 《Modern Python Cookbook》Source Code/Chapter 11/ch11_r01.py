@@ -1,4 +1,4 @@
-"""Python Cookbook
+"""Python网络爬虫与信息提取 Cookbook
 
 Chapter 11, recipe 1 and 2.
 """
@@ -28,11 +28,11 @@ __test__ = {
 'GIVEN_binom_WHEN_wrong_relationship_THEN_error': '''
     >>> binom(5, 52)  # doctest: +IGNORE_EXCEPTION_DETAIL
     Traceback (most recent call last):
-      File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/doctest.py", line 1320, in __run
+      File "/Library/Frameworks/Python网络爬虫与信息提取.framework/Versions/3.5/lib/python3.5/doctest.py", line 1320, in __run
         compileflags, 1), test.globs)
       File "<doctest __main__.__test__.GIVEN_binom_WHEN_wrong_relationship_THEN_error[0]>", line 1, in <module>
         binom(5, 52)
-      File "/Users/slott/Documents/Writing/Python Cookbook/code/ch11_r01.py", line 24, in binom
+      File "/Users/slott/Documents/Writing/Python网络爬虫与信息提取 Cookbook/code/ch11_r01.py", line 24, in binom
         return factorial(n) // (factorial(k) * factorial(n-k))
     ValueError: factorial() not defined for negative values
 ''',
@@ -47,11 +47,11 @@ __test__ = {
 'GIVEN_binom_WHEN_string_THEN_exception': '''
     >>> binom('a', 'b') # doctest: +IGNORE_EXCEPTION_DETAIL
     Traceback (most recent call last):
-      File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/doctest.py", line 1320, in __run
+      File "/Library/Frameworks/Python网络爬虫与信息提取.framework/Versions/3.5/lib/python3.5/doctest.py", line 1320, in __run
         compileflags, 1), test.globs)
       File "<doctest __main__.__test__.binom negative[0]>", line 1, in <module>
         binom(52, -5)
-      File "/Users/slott/Documents/Writing/Python Cookbook/code/ch11_r01.py", line 24, in binom
+      File "/Users/slott/Documents/Writing/Python网络爬虫与信息提取 Cookbook/code/ch11_r01.py", line 24, in binom
         return factorial(n) // (factorial(k) * factorial(n-k))
     TypeError: an integer is required (got type str)
 ''',

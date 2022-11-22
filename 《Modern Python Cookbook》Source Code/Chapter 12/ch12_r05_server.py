@@ -1,4 +1,4 @@
-"""Python Cookbook
+"""Python网络爬虫与信息提取 Cookbook
 
 Chapter 12, recipe 5 -- server.
 """
@@ -15,7 +15,7 @@ dealer.DEBUG=True
 specification = {
     'swagger': '2.0',
     'info': {
-        'title': '''Python Cookbook\nChapter 12, recipe 5.''',
+        'title': '''Python网络爬虫与信息提取 Cookbook\nChapter 12, recipe 5.''',
         'version': '1.0'
     },
     'schemes': ['http'],

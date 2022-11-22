@@ -17,7 +17,7 @@ for i in range(n):
     elif feet % 2 == 0:
         # 如果feet的数值不能被4整除，那么feet减少2再除于4。
         # 剩下的数值最少为整除4，最多为整除2
-        least, most = (feet - 2)//4 + 1, feet//2  # 加1的意义在于要将鸡的数量
+        least, most = (feet - 2)//4 + 1, feet//2  # 加1的意义在于要加上鸡的数量
     else:
         least, most = 0, 0
     print(least, most)

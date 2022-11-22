@@ -1,4 +1,4 @@
-"""Python Cookbook
+"""Python网络爬虫与信息提取 Cookbook
 
 Chapter 5, recipe 6
 """
@@ -14,11 +14,11 @@ def get_options(argv=sys.argv):
     >>> os.environ['UNITS'] = 'NM'
     >>> get_options(['ch05_r06.py', '36.12,-86.67']) # doctest: +IGNORE_EXCEPTION_DETAIL
     Traceback (most recent call last):
-      File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/doctest.py", line 1320, in __run
+      File "/Library/Frameworks/Python网络爬虫与信息提取.framework/Versions/3.5/lib/python3.5/doctest.py", line 1320, in __run
         compileflags, 1), test.globs)
       File "<doctest __main__.get_options[1]>", line 1, in <module>
         get_options(['ch05_r06.py', '36.12,-86.67']) # doctest: +IGNORE_EXCEPTION_DETAIL
-      File "/Users/slott/Documents/Writing/Python Cookbook/code/ch05_r06.py", line 49, in get_options
+      File "/Users/slott/Documents/Writing/Python网络爬虫与信息提取 Cookbook/code/ch05_r06.py", line 49, in get_options
         sys.exit("Neither HOME_PORT nor p2 argument provided.")
     SystemExit: Neither HOME_PORT nor p2 argument provided.
 
@@ -31,11 +31,11 @@ def get_options(argv=sys.argv):
     >>> os.environ['HOME_PORT'] = '36.842952,-76.300171'
     >>> get_options(['ch05_r06.py', '36.12,-86.67']) # doctest: +IGNORE_EXCEPTION_DETAIL
     Traceback (most recent call last):
-      File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/doctest.py", line 1320, in __run
+      File "/Library/Frameworks/Python网络爬虫与信息提取.framework/Versions/3.5/lib/python3.5/doctest.py", line 1320, in __run
         compileflags, 1), test.globs)
       File "<doctest __main__.get_options[5]>", line 1, in <module>
         get_options(['ch05_r06.py', '36.12,-86.67'])
-      File "/Users/slott/Documents/Writing/Python Cookbook/code/ch05_r06.py", line 27, in get_options
+      File "/Users/slott/Documents/Writing/Python网络爬虫与信息提取 Cookbook/code/ch05_r06.py", line 27, in get_options
         sys.exit("Invalid value for UNITS, not KM, NM, or MI")
     SystemExit: Invalid value for UNITS, not KM, NM, or MI
     """
